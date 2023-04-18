@@ -111,7 +111,7 @@ public class Tile : MonoBehaviour
 
         result += tileType.Equals("start") + "~";
         result += (tileType.Equals("checkpoint") || tileType.Equals("start")) + "~";
-        result += tileType.Equals("coin") + "~";
+        result += hasCoin + "~";
         result += (-175 + x * 70) + "~" + (-175 + y * 70) + "~";
         return result;
     }
